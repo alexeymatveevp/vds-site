@@ -20,3 +20,10 @@ You can simply unzip the package with tar or dpkg utility, look inside and copy 
 There is a program called alien that will convert .deb into .rpm and vice versa for you.
 Alternatively you can use rpmbuild, but it requires skills and knowledge of how .rpm is structured.
 
+Some packages like glibc or dpkg was not in the official repository so they should be installed manually.
+
+It's also preferable to add EPEL repository (for rtorrent for ex)
+wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
+
