@@ -1,0 +1,22 @@
+CentOS is a stable linux that should be very easy for Fedora and Ubuntu (<10 version) users. That's because it uses Gnome and is pretty much the same for the regular user as me.
+I recently installed CentOS 6.0.
+During installation there was a choice of "what type of linux you want" like:
+    Empty
+    Basic
+    Media studio
+    Education
+    Developer
+I chose the last one and got Eclipse, OpenJDK and Qt as a present.
+When installation finishes, there was a reboot and easy login. Ok, now I have "Developer CentOS".
+
+First, I downloaded Chromium to have my bookmarks and neat place to google.
+You can do it with the following command: yum install google-chrome-stable
+Of course with sudo prefix or as a super user.
+    Hint: by default your first user is not in the sudoers list, so you should add it manually in /etc/sudoers
+CentOS is using yum packet manager, that is pretty much the same as apt-get, but work with .rpm packages instead of .deb.
+Repository list is located under /etc/yum.repos.d/ folder, where you can add new ones.
+Next step was to install Steam client. Well, little bit tricky, because Steam for linux is distributed only in .deb package.
+You can simply unzip the package with tar or dpkg utility, look inside and copy contents manually. But that's lazy.
+There is a program called alien that will convert .deb into .rpm and vice versa for you.
+Alternatively you can use rpmbuild, but it requires skills and knowledge of how .rpm is structured.
+
