@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>David is Lucky</title>
+    <link rel="stylesheet" type="text/css" href="css/flatly-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<!--#include virtual="/menu.htm" -->
+
+<section id="navSection" class="navbar">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li><a id="nowTab" data-toggle="pill" href="#nowSection">Now</a></li>
+            <li><a id="pastTab" data-toggle="pill" href="#pastSection">Past</a></li>
+            <li><a id="aboutTab" data-toggle="pill" href="#aboutSection">About me</a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="contentSection" class="tab-content">
+    <section id="nowSection" class="tab-pane">
+
+    </section>
+
+    <section id="pastSection" class="tab-pane">
+        <div class="container hero-unit comp-content">
+            <ul id="pastProducts" class="thumbnails">
+                <li class="span4">
+                    <a class="thumbnail">
+                        <img src="img/centos.png">
+                    </a>
+                    <input type="hidden" value="#centos">
+                    <h2>CentOS overview</h2>
+                </li>
+            </ul>
+        </div>
+        <div id="centos">
+            <div class="header container hero-unit comp-header">
+                <div class="row">
+                    <div class="span8">
+                        <h1>Today is <strong>CentOS</strong></h1>
+                        <a href="http://www.centos.org/">http://www.centos.org/</a>
+                    </div>
+                    <div class="span4">
+                        <img class="img-polaroid" src="img/centos.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="container hero-unit comp-content">
+                <div class="row">
+                    <div class="span12">
+                        <p>CentOS is a stable linux that should be very easy for Fedora and Ubuntu (<10 version) users. That's because it uses Gnome and is pretty much the same for the regular user as me.</p>
+                        <p>I recently installed CentOS 6.0.</p>
+                        <p>During installation there was a choice of "what type of linux you want" like:</p>
+                        <ul>
+                            <li>Empty</li>
+                            <li>Basic</li>
+                            <li>Media studio</li>
+                            <li>Education</li>
+                            <li>Developer</li>
+                        </ul>
+                        <p>I chose the last one and got Eclipse, OpenJDK and Qt as a present.
+                            When installation finishes, there was a reboot and easy login. Ok, now I have "Developer CentOS".</p>
+                        </hr>
+                        <p>First, I downloaded Chromium to have my bookmarks and neat place to google.</p>
+                        <p>You can do it with the following command:</p>
+                        <code>yum install google-chrome-stable</code>
+                        <p>Of course with sudo prefix or as a super user.</p>
+                        <blockquote><span class="label label-info">Hint</span>By default your first user is not in the sudoers list, so you should add it manually in /etc/sudoers</blockquote>
+                        <p>CentOS is using yum packet manager, that is pretty much the same as apt-get, but work with .rpm packages instead of .deb.
+                            Repository list is located under /etc/yum.repos.d/ folder, where you can add new ones.
+
+
+                        </p>
+                        <p>Next step was to install Steam client. Well, little bit tricky, because Steam for linux is distributed only in .deb package.
+                            You can simply unzip the package with tar or dpkg utility, look inside and copy contents manually. But that's lazy.</p>
+                        <p>There is a program called alien that will convert .deb into .rpm and vice versa for you.</p>
+                        <blockquote><span class="label label-info">Hint</span>Alternatively you can use rpmbuild, but it requires skills and knowledge of how .rpm is structured.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutSection" class="container tab-pane">
+        <div class="hero-unit comp-content">
+            <div class="row">
+                <div class="span12">About me</div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <ul class="row">
+            <li class="span3">
+                <p>Powered by <a href="http://davidluckystar.blogspot.ru/"><i class="icon-user">David Lucky Starr</i></a></p>
+            </li>
+            <li class="span4">
+                <p>Everything is possible for you if you dream and learn.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>
