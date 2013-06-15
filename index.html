@@ -2,40 +2,66 @@
 <html>
 <head>
     <title>David is Lucky</title>
-    <link rel="stylesheet" type="text/css" href="css/flatly-bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/layout-responsive.css">
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <!--<script src="js/script.js"></script>-->
 </head>
 <body>
 
-<section id="navSection" class="navbar">
-    <div class="navbar-inner">
-        <ul class="nav">
-            <li><a id="nowTab" href="index.html">Now</a></li>
-            <li><a id="pastTab" href="past.html">Past</a></li>
-            <li><a id="aboutTab" href="about.html">About me</a></li>
-        </ul>
-    </div>
-</section>
+<nav class="navigation">
+    <ul>
+        <li><a id="nowTab" href="index.html">Now</a></li>
+        <li><a id="pastTab" href="past.html">Past</a></li>
+        <li><a id="aboutTab" href="about.html">About me</a></li>
+    </ul>
+    <div class="top-background"></div>
+</nav>
 
-<section id="nowSection">
-    Math topic is currently under development.
+<section id="nowSection" class="article gray">
+    <h2>Tasty *NIX commands</h2>
+    <ul>
+        <li class="item">
+            <div>
+                <strong>tree</strong>
+                <small>shows the tree view of the directory deep to it's end</small>
+            </div>
+            <img src="img/linux_commands/tree.png">
+        </li>
+        <li class="item">
+            <div>
+                <strong>ls</strong>
+                <small>prints list of files and directories in the presented directory</small>
+            </div>
+            <img src="img/linux_commands/ls.png">
+        </li>
+        <li class="item">
+            <div>
+                <strong>du</strong>
+                <small>shows the size of files and directories (in M, K, G or blocks)</small>
+            </div>
+            <img src="img/linux_commands/du.png">
+        </li>
+        <li class="item">
+            <div>
+                <strong>env</strong>
+                <small>prints all system set environmental variables</small>
+            </div>
+            <img src="img/linux_commands/env.png">
+        </li>
+    </ul>
 </section>
 
 <section class="footer">
-    <div class="container">
-        <ul class="row">
-            <li class="span3">
-                <p>Powered by <a href="http://davidluckystar.blogspot.ru/"><i class="icon-user">David Lucky Starr</i></a></p>
-            </li>
-            <li class="span4">
-                <p>Everything is possible for you if you dream and learn.</p>
-            </li>
-        </ul>
-    </div>
+    <ul>
+        <li class="box">
+            <p>Powered by <a href="http://davidluckystar.blogspot.ru/"><i class="icon-user">David Lucky Starr</i></a></p>
+        </li>
+        <li class="box">
+            <p>Everything is possible for you if you dream and learn.</p>
+        </li>
+    </ul>
+    <div class="bot-background"></div>
 </section>
 
 </body>
