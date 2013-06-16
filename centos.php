@@ -14,7 +14,7 @@
 <section id="navSection" class="navbar">
     <div class="navbar-inner">
         <ul class="nav">
-            <li><a id="nowTab" href="index.html">Now</a></li>
+            <li><a id="nowTab" href="index.php">Now</a></li>
             <li><a id="pastTab" href="past.html">Past</a></li>
             <li><a id="aboutTab" href="about.html">About me</a></li>
         </ul>
@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="span8">
                     <h1>Today is <strong>CentOS</strong></h1>
-                    <a href="http://www.centos.org/">http://www.centos.org/</a>
+                    <a href="http://www.centos.org/centos.php">http://www.centos.org/</a>
                 </div>
                 <div class="span4">
                     <img class="img-polaroid" src="img/centos.png"/>

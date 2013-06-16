@@ -14,7 +14,7 @@
 <section id="navSection" class="navbar">
     <div class="navbar-inner">
         <ul class="nav">
-            <li><a id="nowTab" href="index.html">Now</a></li>
+            <li><a id="nowTab" href="index.php">Now</a></li>
             <li><a id="pastTab" href="past.html">Past</a></li>
             <li><a id="aboutTab" href="about.html">About me</a></li>
         </ul>
