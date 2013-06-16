@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>David is Lucky</title>
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/layout-responsive.css">
-    <script src="http://code.jquery.com/jquery.js"></script>
-</head>
+<?php
+    include 'header.html';
+?>
 <body>
-
-
-<nav class="navigation">
-    <ul>
-        <li><a id="nowTab" href="index.html">Now</a></li>
-        <li><a id="pastTab" href="past.html">Past</a></li>
-        <li><a id="aboutTab" href="about.html">About me</a></li>
-    </ul>
-    <div class="top-background"></div>
-</nav>
+<?php
+    include 'nav.html';
+?>
 
 <section id="pastSection" class="article transparent">
     <ul id="pastProducts">
@@ -38,17 +27,9 @@
     </ul>
 </section>
 
-<section class="footer">
-    <ul>
-        <li class="box">
-            <p>Powered by <a href="http://davidluckystar.blogspot.ru/"><i class="icon-user">David Lucky Starr</i></a></p>
-        </li>
-        <li class="box">
-            <p>Everything is possible for you if you dream and learn.</p>
-        </li>
-    </ul>
-    <div class="bot-background"></div>
-</section>
+<?php
+    include 'footer.html';
+?>
 
 </body>
 </html>
