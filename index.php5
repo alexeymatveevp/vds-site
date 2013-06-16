@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <?php
-    include 'header.html';
+include 'header.html';
 ?>
 <body>
 <?php
-    include 'nav.html';
+include 'nav.html';
 ?>
 <section id="nowSection" class="article gray">
     <img src="img/icons/bookmark.png" class="icon">
@@ -44,7 +44,7 @@
 </section>
 
 <?php
-    include 'footer.html';
+include 'footer.html';
 ?>
 
 </body>
