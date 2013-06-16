@@ -88,3 +88,35 @@ a:hover, a:focus {
     color: #212121;
     text-decoration: underline;
 }
+
+
+/**
+ * Icons sprites.
+ */
+.icon-google {
+    display: block;
+    width: 72px;
+    height: 61px;
+    background: url("../img/icons/social.png") -61px -575px;
+}
+
+.icon-facebook {
+    display: block;
+    width: 72px;
+    height: 61px;
+    background: url("../img/icons/social.png") -61px -447px;
+}
+
+.icon-twitter {
+    display: block;
+    width: 72px;
+    height: 61px;
+    background: url("../img/icons/social.png") -61px -5px;
+}
+
+.icon-linkedin {
+    display: block;
+    width: 72px;
+    height: 61px;
+    background: url("../img/icons/social.png") -61px -191px;
+}
