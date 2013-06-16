@@ -100,6 +100,17 @@ img {
     padding: 0px;
 }
 
+.navigation > div {
+    position: absolute;
+    right: 100px;
+    top: 20px;
+}
+
+.navigation > div > span {
+    color: #ffffff;
+    margin-right: 40px;
+}
+
 .box {
     float: left;
     margin: 35px;

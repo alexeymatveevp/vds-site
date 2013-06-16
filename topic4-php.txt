@@ -1,0 +1,7 @@
+This is a message to all Java and C# developers. I just wanted to say - you are so lucky! Because you don't code PHP...
+
+From PHP 5.0 it have OOP stuff like classes and methods.. well, kinda. If you look at PHP API for any function, it'll give you a choice (!) of programming style that are:
+	Object-oriented
+	Procedural
+And they also support the "old school" programming with none of these stuff. Just look at how confusing this code is:
+..and it does the same thing! You is able to choose.

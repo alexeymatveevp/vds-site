@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <?php
-include 'header.html';
+include 'head.php';
 ?>
 <body>
 <?php
-include 'nav.html';
+include 'nav.php';
 ?>
 
 <section id="pastSection">
