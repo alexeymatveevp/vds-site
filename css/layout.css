@@ -62,10 +62,23 @@ img {
     padding-bottom: 100px;
 }
 
-.article img.icon {
+.article img.bookmark {
     position: absolute;
     top: -65px;
     right: -50px;
+}
+
+.article img.secret {
+    max-width: 75px;
+    position: absolute;
+    top: 16px;
+    right: 37px;
+    opacity: 0.3;
+}
+
+.article img.secret:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .article-thumbnail {
@@ -80,7 +93,7 @@ img {
     background-color: #2c3e50;
 }
 
-.navigation > ul {
+.navigation > ul.main {
     list-style: none;
     position: relative;
     left: 0;
@@ -89,13 +102,19 @@ img {
     margin: 0 10px 0 0;
 }
 
-.navigation > ul > li {
+.navigation > ul.main > li {
     float: left;
     padding: 20px;
 }
 
-.navigation > ul.social-icons,
-.navigation > ul.social-icons li {
+.navigation > ul.main > li:hover {
+    background-color: rgb(27, 43, 60);
+}
+
+.navigation > ul.social-icons {
+    position: absolute;
+    top:200px;
+    right: 10px;
     margin: 0px;
     padding: 0px;
 }
@@ -104,11 +123,20 @@ img {
     position: absolute;
     right: 100px;
     top: 20px;
+    width: 360px;
 }
 
 .navigation > div > span {
     color: #ffffff;
     margin-right: 40px;
+    float: left;
+    position: absolute;
+    right: 100px;
+}
+
+.navigation > div > form[name='logoutForm'] {
+    position: absolute;
+    right: 10px;
 }
 
 .box {

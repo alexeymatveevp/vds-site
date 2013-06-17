@@ -33,6 +33,7 @@ a:hover, a:focus {
  * Any block that should be with header, subheader, maybe img.
  */
 .item {
+    clear: both;
     display: block;
     margin-top: 30px;
 }
@@ -51,9 +52,20 @@ a:hover, a:focus {
 }
 
 .item > img {
-    clear: both;
+    max-width: 70%;
+    float: left;
     display: block;
     font-size: 26px;
+}
+
+.item > aside {
+    max-width: 30%;
+    margin-left: 50px;
+    float: left;
+}
+
+.item > aside > blockquote {
+    margin-left: 30px;
 }
 
 /**

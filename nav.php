@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($_POST['name'] && $_POST['passwd']) {
         $name = $_POST['name'];
         $passwd = $_POST['passwd'];
-        $mysqli = new mysqli('localhost', 'root', '', 'site');
+        $mysqli = new mysqli('localhost', 'root', 'asdf;lkj', 'site');
         if ($mysqli->connect_errno) {
             // printf("Can't connect");
         } else {
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 <nav class="navigation">
-    <ul>
+    <ul class="main">
         <li><a id="nowTab" href="index.php">Now</a></li>
         <li><a id="pastTab" href="past.php">Past</a></li>
         <li><a id="aboutTab" href="about.html">About me</a></li>
@@ -44,17 +44,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_SESSION['login'])) {
         echo "<span>Hello, ".$_SESSION['login']."</span>";
         ?>
-            <form method="get" target="_self">
+            <form name="logoutForm" method="get" target="_self">
                 <input type="hidden" name="logout" value="true">
-                <input type="submit" value="Logout">
+                <a href="" onclick="document.forms['logoutForm'].submit(); return false;">Logout</a>
             </form>
         <?php
     } else {
         ?>
-            <form method="post">
-                <input type="text" name="name"/>
-                <input type="password" name="passwd"/>
-                <input type="submit" value="Login"/>
+            <form name="loginForm" method="post" target="_self">
+                <input type="text" name="name" placeholder="username"/>
+                <input type="password" name="passwd" placeholder="password"/>
+                <a href="" onclick="document.forms['loginForm'].submit(); return false;">Login</a>
             </form>
         <?php
     }
