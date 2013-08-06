@@ -27,7 +27,7 @@ include 'nav.php';
                 <p>Invoked without parameters tree will show the full directory tree of current directory.</p>
                 <blockquote>
                     <strong>-a</strong>
-                    <p>all files are listed, including hidden ones</p>
+                    <p>all files are listed, including hidden ones</p>                  dd
                     <strong>-d</strong>
                     <p>list directories only</p>
                     <strong>-s</strong>
